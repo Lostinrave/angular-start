@@ -1,11 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
+
+import { ProductsTableComponent } from './products-table/products-table.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatSliderModule } from '@angular/material/slider';
+// Material modules
+// import { MatSliderModule } from '@angular/material/slider';
+import {MatTableModule} from '@angular/material/table';
+
+
 
 @NgModule({
   declarations: [
@@ -15,8 +23,11 @@ import { MatSliderModule } from '@angular/material/slider';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSliderModule,
+    // MatSliderModule,
+    MatTableModule,
+    RouterModule.forRoot([{ path: '', component: ProductsTableComponent }]),
   ],
+  // declarations:[AppComponent , ProductsTableComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
