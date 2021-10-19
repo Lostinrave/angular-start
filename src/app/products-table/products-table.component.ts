@@ -27,7 +27,7 @@ const ELEMENT_DATA: ProductsTable[] = [
  */
 @Component({
   selector: 'app-products',
-  templateUrl: './products-table.component.html',
+  templateUrl: './proproducts-table.component.html',
   styleUrls: ['./products-table.component.scss'],
 
 })
