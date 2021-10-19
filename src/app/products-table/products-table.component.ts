@@ -1,27 +1,20 @@
 import {Component} from '@angular/core';
 import {MatTableDataSource} from '@angular/material/table';
 
-
-export interface ProductsTable {
-  id: number;
-  photo: string;
-  name: string;
-  price: number;
-  description: string;
-}
+import { ProductsTable } from '../products';
 
 const ELEMENT_DATA: ProductsTable[] = [
-{id: 1, photo: 'https://images.kaina24.lt/43/63/iphone-13-128gb.jpg', name: 'Iphone 13', price: 799, description: 'A large phone with one of the best screens'},
-{id: 2, photo: 'https://images.kaina24.lt/43/14/samsung-galaxy-s21-128gb-2.jpg', name: 'Samsung s21', price: 699, description: 'A great phone with one of the best cameras'},
-{id: 3, photo: 'https://images.kaina24.lt/43/93/oneplus-9-pro-2.jpg', name: 'One plus 9', price: 599, description: 'A great phone with one of the best cameras'},
-//   {id: 4, name: 'Beryllium', price: 9.0122, description: 'Be', photo:},
-//   {id: 5, name: 'Boron', price: 10.811, description: 'B', photo:},
-//   {id: 6, name: 'Carbon', price: 12.0107, description: 'C', photo:},
-//   {id: 7, name: 'Nitrogen', price: 14.0067, description: 'N', photo:},
-//   {id: 8, name: 'Oxygen', price: 15.9994, description: 'O', photo:},
-//   {id: 9, name: 'Fluorine', price: 18.9984, description: 'F', photo:},
-//   {id: 10, name: 'Neon', price: 20.1797, description: 'Ne', photo:},
-];
+  {id: 1, photo: 'https://images.kaina24.lt/43/63/iphone-13-128gb.jpg', name: 'Iphone 13', price: 1599, description: "Apple's new iPhone isn't radically different, but that's part of its charm"},
+  {id: 2, photo: 'https://images.kaina24.lt/43/14/samsung-galaxy-s21-128gb-2.jpg', name: 'Samsung s21', price: 699, description: 'Top-of-the-line Android smartphone'},
+  {id: 3, photo: 'https://images.kaina24.lt/43/93/oneplus-9-pro-2.jpg', name: 'One plus 9', price: 730, description: 'Flagship phone with a great value'},
+  {id: 4, photo: 'https://images.kaina24.lt/43/19/google-pixel-5a.jpg', name: 'Google Pixel 5a 5G', price: 599, description: 'Best phone for affordable 5G'},
+  {id: 5, photo: 'https://images.kaina24.lt/43/82/motorola-edge-plus.jpg', name: 'Motorola Edge Plus', price: 500, description: ''},
+  {id: 6, photo: 'https://images.kaina24.lt/43/42/apple-iphone-se-64gb.jpg', name: 'Apple iPhone SE', price: 399, description: ''},
+  {id: 7, photo: 'https://images.kaina24.lt/43/13/samsung-galaxy-s21-ultra-128gb.jpg', name: 'Samsung Galaxy S21 Ultra', price: 1250, description: ''},
+  {id: 8, photo: 'https://images.kaina24.lt/43/63/samsung-galaxy-s20-fe.jpg', name: 'Samsung Galaxy S20 FE', price: 650, description: ''},
+  {id: 9, photo: 'https://images.kaina24.lt/43/74/google-pixel-4a.jpg', name: 'Google Pixel 4A', price: 485, description: ''},
+  {id: 10, photo: 'https://images.kaina24.lt/43/70/apple-iphone-12-pro-max-128gb.jpg', name: 'iPhone 12 Pro Max', price: 1099, description: 'The all-around best phone'},
+  ];
 
 /**
  * @title Basic use of `<table mat-table>`
