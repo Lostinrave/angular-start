@@ -1,18 +1,19 @@
 import {Component} from '@angular/core';
+import {MatTableDataSource} from '@angular/material/table';
 
 
 export interface ProductsTable {
-    id: number;
-    name: string;
-    price: number;
-    description: string;
-    photo: string;
+  id: number;
+  photo: string;
+  name: string;
+  price: number;
+  description: string;
 }
 
 const ELEMENT_DATA: ProductsTable[] = [
-  {id: 1, name: 'Iphone 13', price: 799, description: 'A large phone with one of the best screens', photo: 'https://images.kaina24.lt/43/63/iphone-13-128gb.jpg'},
-  {id: 2, name: 'Samsung s21', price: 699, description: 'A great phone with one of the best cameras', photo: 'https://images.kaina24.lt/43/14/samsung-galaxy-s21-128gb-2.jpg'},
-  {id: 3, name: 'One plus 9', price: 599, description: 'A great phone with one of the best cameras', photo: 'https://images.kaina24.lt/43/93/oneplus-9-pro-2.jpg'},
+{id: 1, photo: 'https://images.kaina24.lt/43/63/iphone-13-128gb.jpg', name: 'Iphone 13', price: 799, description: 'A large phone with one of the best screens'},
+{id: 2, photo: 'https://images.kaina24.lt/43/14/samsung-galaxy-s21-128gb-2.jpg', name: 'Samsung s21', price: 699, description: 'A great phone with one of the best cameras'},
+{id: 3, photo: 'https://images.kaina24.lt/43/93/oneplus-9-pro-2.jpg', name: 'One plus 9', price: 599, description: 'A great phone with one of the best cameras'},
 //   {id: 4, name: 'Beryllium', price: 9.0122, description: 'Be', photo:},
 //   {id: 5, name: 'Boron', price: 10.811, description: 'B', photo:},
 //   {id: 6, name: 'Carbon', price: 12.0107, description: 'C', photo:},
@@ -27,11 +28,16 @@ const ELEMENT_DATA: ProductsTable[] = [
  */
 @Component({
   selector: 'app-products',
-  templateUrl: './proproducts-table.component.html',
+  templateUrl: './products-table.component.html',
   styleUrls: ['./products-table.component.scss'],
 
 })
 export class ProductsTableComponent {
-  displayedColumns: string[] = ['id', 'name', 'price', 'description','photo'];
-  dataSource = ELEMENT_DATA;
+  displayedColumns: string[] = ['id','photo', 'name', 'price', 'description'];
+  dataSource = new MatTableDataSource(ELEMENT_DATA);
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
 }
+

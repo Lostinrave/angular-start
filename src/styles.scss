@@ -290,5 +290,31 @@
       visibility: hidden;
     }
 }
+  .flex {
+    display: flex;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .h-screen {
+    height: 100vh;
+  }
+  .m-auto {
+    margin: 0 auto;
+  }
+  .px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  // .mat-width {
+  //   width: 100%;
+  // }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
