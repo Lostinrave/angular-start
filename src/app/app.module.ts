@@ -17,7 +17,8 @@ import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductsTableComponent
   ],
   imports: [
     BrowserModule,
@@ -25,9 +26,7 @@ import {MatTableModule} from '@angular/material/table';
     BrowserAnimationsModule,
     // MatSliderModule,
     MatTableModule,
-    RouterModule.forRoot([{ path: '', component: ProductsTableComponent }]),
   ],
-  // declarations:[AppComponent , ProductsTableComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
