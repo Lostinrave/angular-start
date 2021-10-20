@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -14,6 +13,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { MatButtonModule } from '@angular/material/button';
 
 
 
@@ -21,7 +23,9 @@ import { MatInputModule } from '@angular/material/input';
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsTableComponent
+    ProductsTableComponent,
+    ContactFormComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,8 @@ import { MatInputModule } from '@angular/material/input';
     // MatSliderModule,
     MatTableModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
