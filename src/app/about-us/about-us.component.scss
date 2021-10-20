@@ -1,0 +1,19 @@
+.container {
+    max-width: 986px;
+}
+.about-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.circular--landscape img {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+ 
+}
+.pad {
+  padding: 50px;
+}

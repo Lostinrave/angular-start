@@ -16,6 +16,10 @@ import { MatInputModule } from '@angular/material/input';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { SideBarComponent } from './side-bar/side-bar.component';
 
 
 
@@ -25,7 +29,8 @@ import { MatButtonModule } from '@angular/material/button';
     AppComponent,
     ProductsTableComponent,
     ContactFormComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    SideBarComponent
   ],
   imports: [
     BrowserModule,
@@ -35,9 +40,13 @@ import { MatButtonModule } from '@angular/material/button';
     MatTableModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule,
+    MatSidenavModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

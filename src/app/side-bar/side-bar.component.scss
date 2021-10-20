@@ -1,0 +1,31 @@
+:host{
+  .mat-drawer.mat-drawer-side {
+    z-index: 0;
+  }
+  .absolute-icon {
+    position: absolute;
+    top: -200px;
+    left: 10px;
+  }
+  ul{
+    list-style-type: none;
+  }
+  
+  .links li a {
+    color: black;
+  }
+}
+.example-container {
+    height: 100%;
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }

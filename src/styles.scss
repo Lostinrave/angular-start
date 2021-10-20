@@ -313,8 +313,18 @@
   .flex-wrap {
     flex-wrap: wrap;
   }
-  // .mat-width {
-  //   width: 100%;
-  // }
+
+  .w-full {
+    width: 100%;
+  }
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+  background: url(assets/images/background5.jpg) no-repeat center center fixed;
+  margin: 0; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
