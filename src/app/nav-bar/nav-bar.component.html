@@ -1,0 +1,18 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item><a class="link" routerLink="/" routerLinkActive="active">Products</a></button>
+          <button mat-menu-item><a class="link" routerLink="/contacts" routerLinkActive="active">Contact</a></button>
+          <button mat-menu-item><a class="link" routerLink="/about-us" routerLinkActive="active">About us</a></button>
+        </mat-menu>
+    </button>
+    <div class="brand"><a class="link" routerLink="/" routerLinkActive="active">Phone shop</a></div>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button">
+      <mat-icon>facebook</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button">
+      <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>

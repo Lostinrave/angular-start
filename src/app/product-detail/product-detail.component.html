@@ -1,0 +1,14 @@
+<div class="flex flex-wrap -mx-5 mb-3 mt-5 justify-center">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{product.name}}</mat-card-title>
+      <mat-card-subtitle>{{product.description}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="product.photo" alt="Photo of a Shiba Inu">
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

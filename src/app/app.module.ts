@@ -20,6 +20,11 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { SideBarComponent } from './side-bar/side-bar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 
@@ -30,7 +35,9 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     ProductsTableComponent,
     ContactFormComponent,
     AboutUsComponent,
-    SideBarComponent
+    SideBarComponent,
+    NavBarComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +50,10 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     MatButtonModule,
     MatGridListModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

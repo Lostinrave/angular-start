@@ -13,7 +13,7 @@ import { ELEMENT_DATA } from '../products';
 
 })
 export class ProductsTableComponent {
-  displayedColumns: string[] = ['id','photo', 'name', 'price', 'description'];
+  displayedColumns: string[] = ['id','photo', 'name', 'price', 'description', 'view'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
